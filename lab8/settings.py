@@ -78,7 +78,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    #  'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME':'pokedex',
+    #     'HOST':'localhost',
+    #     'PORT': '5432', #puerto por defecto de postgres
+    #     'USER': 'postgres', #usuario que este en postgres
+    #     'PASSWORD': 'postgres' #contraseña segura
+    # }
 }
 
 
