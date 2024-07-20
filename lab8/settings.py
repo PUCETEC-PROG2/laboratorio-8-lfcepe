@@ -76,17 +76,13 @@ WSGI_APPLICATION = 'lab8.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
-    #  'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME':'pokedex',
-    #     'HOST':'localhost',
-    #     'PORT': '5432', #puerto por defecto de postgres
-    #     'USER': 'postgres', #usuario que este en postgres
-    #     'PASSWORD': 'postgres' #contraseña segura
-    # }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'pokedex_felipecepeda',
+        'HOST':'localhost',
+        'PORT': '5432', #puerto por defecto de postgres
+        'USER': 'postgres', #usuario que este en postgres
+        'PASSWORD': 'pucetec' #contraseña segura
+    }
 }
 
 
@@ -125,6 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+#Media files
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
