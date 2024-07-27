@@ -10,7 +10,9 @@
                     <h5 class="card-title">{{ pokemon }}</h5>
                     <p class="card-text">Entrenador Pokemon: {{ pokemon.trainer }}</p>
                     <p class="card-text">Peso del Pokemon: {{ pokemon.weight }}</p>
-                    <a href="pokemon/{{ pokemon.id }}" class="btn btn-primary">Detalles</a>
+                    <a href="pokemon/{{ pokemon.id }}" class="btn btn-primary"><i class="fa-regular fa-eye"></i></a>
+                    <a href="edit_pokemon/{{ pokemon.id }}" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="delete_pokemon/{{ pokemon.id }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                 </div>
             </div>
         {% endfor %}
