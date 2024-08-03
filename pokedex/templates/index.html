@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Pokedex{% endblock title %}
 {% block content %}
-    <a href="{% url "pokedex:add_pokemon" %}">Crear Pokemon</a>
+    <a href="{% url "pokedex:add_pokemon" %}" class="btn btn-primary">Crear Pokemon</a>
     <div class="card-group">
         {% for pokemon in pokemons %}
             <div class="card">
